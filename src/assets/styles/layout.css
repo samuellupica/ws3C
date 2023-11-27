@@ -1,0 +1,3 @@
+.inlay {
+    @apply max-md:px-7 max-md:py-10 md:py-5 md:px-24
+}
