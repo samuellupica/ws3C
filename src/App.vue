@@ -9,9 +9,13 @@ import Footer from "@/components/Footer/Footer.vue";
 
 <!--  <div >-->
   <div class="min-h-screen flex flex-col" :class="router.currentRoute.value.path === '/' ? 'bg-home' : ''" :style="`background-color: ${$route.meta.color}`">
-    <Header/>
-    <div class="inlay"><RouterView/></div>
-    <Footer/>
+    <header>
+      <Header/>
+    </header>
+    <div class="inlay" id="content"><RouterView/></div>
+    <footer class="mt-auto">
+      <Footer/>
+    </footer>
   </div>
 
 </template>
@@ -23,3 +27,4 @@ import Footer from "@/components/Footer/Footer.vue";
 
 }
 </style>
+
