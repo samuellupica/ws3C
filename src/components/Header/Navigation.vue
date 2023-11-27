@@ -1,6 +1,6 @@
 <template>
   <nav class="flex justify-between inlay border-b border-yellowish-green py-2 ">
-    <RouterLink v-for="item in items" :to="item.path">
+    <RouterLink v-for="item in items" :to="item.path" :class="router.currentRoute.value.path === item.path ? '!font-bold' : ''">
       {{ item.name }}
     </RouterLink>
   </nav>

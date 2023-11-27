@@ -22,7 +22,6 @@ const updateHeight = () => {
   const clientHeight = document.documentElement.clientHeight;
   const contentElement = document.getElementById('content');
   const contentPadding = parseInt(window.getComputedStyle(contentElement).getPropertyValue('padding-top'));
-console.log(contentPadding)
   contentHeight.value = (clientHeight - footerHeight - headerHeight - 2*contentPadding) + 'px'
 }
 
