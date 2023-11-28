@@ -1,7 +1,7 @@
 <template>
   <nav class="desktop-navigation" :style="{ minHeight: navHeight }">
     <div class="desktop-navigation-sidebar">
-      <RouterLink v-for="(item, index) in items" :key="index" :to="item.path" :class="router.currentRoute.value.path === item.path ? '!font-bold' : ''">
+      <RouterLink class="scale-up my-5" v-for="(item, index) in items" :key="index" :to="item.path" :class="router.currentRoute.value.path === item.path ? '!font-bold' : ''">
         {{ item.name }}
       </RouterLink>
     </div>

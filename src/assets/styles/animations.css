@@ -20,7 +20,15 @@
     }
 }
 
-/*3d hover animation*/
+.scale-up {
+    transition: all .15s ease-in-out;
+}
+
+.scale-up:hover {
+    transform: scale(1.15);
+}
+
+/*3D hover animation*/
 .three-dimensional-card {
     background: url("public/images/dog-violet.png") no-repeat;
     background-size: cover;
@@ -45,9 +53,4 @@
     right: 0;
     top: 0;
     bottom: 0;
-}
-
-/* Slight parallax effect on hover */
-.three-dimensional-card:hover .content {
-    transform: translateZ(12px);
 }

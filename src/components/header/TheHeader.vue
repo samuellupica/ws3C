@@ -1,7 +1,9 @@
 <template>
   <header>
     <div class="sticky absolute top-0" :style="`background-color: ${$route.meta.color}`">
-      <h3 @click="router.push('/')" class="header-logo">Tierisch anders</h3>
+      <div class="header-logo">
+        <h3 @click="router.push('/')" class="scale-up">Tierisch anders</h3>
+      </div>
       <div class="lg:hidden">
         <Navigation />
       </div>
