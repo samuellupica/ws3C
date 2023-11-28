@@ -1,5 +1,5 @@
 <template>
-  <nav class="max-lg:hidden pr-5 pl-5 top-0 gap-1 border-r" :style="{ minHeight: navHeight }">
+  <nav class="max-lg:hidden pr-5 pl-5 top-0 gap-1 border-r border-yellowish-green" :style="{ minHeight: navHeight }">
     <div class="sticky top-24 flex justify-between desktop-navigation gap-8 h-1/2 overflow-auto">
       <RouterLink v-for="(item, index) in items" :key="index" :to="item.path">
         {{ item.name }}

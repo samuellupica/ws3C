@@ -1,7 +1,7 @@
 <!--TODO: adjust items styling-->
 <template>
   <footer class="mt-auto">
-    <div class="inlay mt-auto w-full flex py-5 justify-between border-yellowish-green border-t">
+    <div class="inlay mt-auto w-full flex py-5 justify-between !border-yellowish-green !border-t">
       <div class="max-lg:flex w-full justify-between">
         <p v-for="(item, index) in items" :key="index">
           {{ item.valueOf() }}
