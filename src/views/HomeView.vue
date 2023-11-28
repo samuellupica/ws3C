@@ -26,14 +26,12 @@ const updateHeight = () => {
   const footerHeight = document.querySelector('footer').offsetHeight;
   const headerHeight = document.querySelector('header').offsetHeight;
   const clientHeight = document.documentElement.clientHeight;
-  const contentElement = document.getElementById('content');
-  const contentPadding = parseInt(window.getComputedStyle(contentElement).getPropertyValue('padding-top'));
-  contentHeight.value = (clientHeight - footerHeight - headerHeight - 2 * contentPadding) + 'px'
+  contentHeight.value = (clientHeight - footerHeight - headerHeight) + 'px'
 }
 
 onMounted(() => {
   updateHeight();
-  updateWidth()
+  updateWidth();
   window.addEventListener(("resize"), () => {
     updateWidth();
     updateHeight();
