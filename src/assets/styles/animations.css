@@ -1,0 +1,53 @@
+.fade-in {
+    animation: fadeIn 2s, scaleIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.98);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*3d hover animation*/
+.three-dimensional-card {
+    background: url("public/images/dog-violet.png") no-repeat;
+    background-size: cover;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 40px;
+    position: relative;
+    color: #fff;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+.three-dimensional-card::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Slight parallax effect on hover */
+.three-dimensional-card:hover .content {
+    transform: translateZ(12px);
+}

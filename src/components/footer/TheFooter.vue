@@ -11,7 +11,7 @@
         <span>Sonja Tschudin </span>
         <span>Balmisriedweg 1</span>
         <span><br />4116 Metzerlen </span>
-        <span class="font-normal"><br />061 311 50 59 </span>
+        <a  href="tel:061 311 50 59" class="font-normal"><br />061 311 50 59</a>
       </span>
     </div>
   </footer>
