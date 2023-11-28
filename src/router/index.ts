@@ -31,7 +31,10 @@ const router = createRouter({
     {
       path: '/about-us',
       name: 'about us',
-      component: AboutUsView
+      component: AboutUsView,
+      meta: {
+        color: '#927DC9'
+      }
     }
   ]
 })
