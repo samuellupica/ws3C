@@ -6,5 +6,5 @@
 </template>
 <script setup lang="js">
 import NavDesktop from '@/components/header/NavDesktop.vue'
-import router from "@/router";
+import router from '@/router'
 </script>

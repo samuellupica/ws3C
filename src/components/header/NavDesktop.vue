@@ -8,11 +8,11 @@
   </nav>
 </template>
 <script setup lang="js">
-import {onMounted, ref} from 'vue'
-import router from "@/router";
+import { onMounted, ref } from 'vue'
+import router from '@/router'
 
 const navHeight = ref('auto')
-const items = ref([]);
+const items = ref([])
 
 router.options.routes.forEach((route) => {
   if (route.name !== 'home') {
@@ -34,7 +34,6 @@ onMounted(() => {
   updateNavHeight()
   window.addEventListener('resize', updateNavHeight)
 })
-
 </script>
 <style>
 .desktop-navigation {
