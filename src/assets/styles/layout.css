@@ -1,3 +1,25 @@
 .inlay {
   @apply max-md:px-7 max-md:py-10 md:py-5 md:px-24 lg:py-24 lg:pl-40 lg:pr-40;
 }
+
+.mobile-navigation {
+  @apply flex justify-between inlay !border-b !border-yellowish-green !py-2;
+}
+
+.desktop-navigation-sidebar {
+  writing-mode: vertical-rl;
+  rotate: 180deg;
+  @apply sticky top-24 flex justify-between gap-8 h-1/2 overflow-auto;
+}
+
+.desktop-navigation {
+  @apply max-lg:hidden pr-5 pl-5 top-0 gap-1 border-r border-yellowish-green;
+}
+
+.home-content {
+  @apply flex flex-col justify-between lg:flex-row w-full;
+}
+
+.header-logo {
+  @apply text-center w-screen !border-b !border-yellowish-green py-3 cursor-pointer;
+}

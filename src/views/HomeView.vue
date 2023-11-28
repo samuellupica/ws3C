@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between lg:flex-row w-full" :style="{ height: contentHeight }">
+  <div class="home-content" :style="{ height: contentHeight }">
     <div class="flex flex-col">
       <h1 class="w-max" id="tierisch-heading-1">Tierisch</h1>
       <p :style="{ maxWidth: textWidth }">

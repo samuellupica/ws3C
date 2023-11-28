@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-between inlay !border-b !border-yellowish-green py-2">
+  <nav class="mobile-navigation">
     <RouterLink v-for="(item, index) in items" :key="index" :to="item.path" :class="router.currentRoute.value.path === item.path ? '!font-bold' : ''">
       {{ item.name }}
     </RouterLink>
@@ -19,3 +19,4 @@ router.options.routes.forEach((route) => {
   }
 })
 </script>
+<style></style>

@@ -1,7 +1,7 @@
 <template>
-  <nav class="max-lg:hidden pr-5 pl-5 top-0 gap-1 border-r border-yellowish-green" :style="{ minHeight: navHeight }">
-    <div class="sticky top-24 flex justify-between desktop-navigation gap-8 h-1/2 overflow-auto">
-      <RouterLink v-for="(item, index) in items" :key="index" :to="item.path">
+  <nav class="desktop-navigation" :style="{ minHeight: navHeight }">
+    <div class="desktop-navigation-sidebar">
+      <RouterLink v-for="(item, index) in items" :key="index" :to="item.path" :class="router.currentRoute.value.path === item.path ? '!font-bold' : ''">
         {{ item.name }}
       </RouterLink>
     </div>
@@ -35,9 +35,4 @@ onMounted(() => {
   window.addEventListener('resize', updateNavHeight)
 })
 </script>
-<style>
-.desktop-navigation {
-  writing-mode: vertical-rl;
-  rotate: 180deg;
-}
-</style>
+<style></style>
