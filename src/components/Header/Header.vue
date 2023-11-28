@@ -10,7 +10,7 @@
 </template>
 <script setup lang="ts">
 import router from "@/router";
-import Navigation from "@/components/Header/Navigation.vue";
+import Navigation from "@/components/Header/NavMobile.vue";
 
 </script>
 <style>
