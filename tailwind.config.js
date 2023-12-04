@@ -14,7 +14,7 @@ module.exports = {
         'yellowish-green':  "#CCFF8C",
       },
       backgroundImage: {
-        'home': "url('/images/dog-violet.webp)",
+        'home': "url('/images/dog-violet.png)",
       }
     },
   },
