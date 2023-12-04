@@ -9,7 +9,7 @@
 .desktop-navigation-sidebar {
   writing-mode: vertical-rl;
   rotate: 180deg;
-  @apply sticky top-24 flex justify-between gap-8 h-1/2 overflow-auto;
+  @apply sticky top-24 flex justify-between gap-8 h-full max-h-[500px];
 }
 
 .desktop-navigation {
