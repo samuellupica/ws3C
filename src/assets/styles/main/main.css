@@ -1,0 +1,69 @@
+@import '../variables.css';
+
+body {
+  color: var(--text-color);
+}
+
+p,
+h2 {
+  font-family: Inter, sans-serif !important;
+}
+
+h1,
+h3 {
+  font-family: 'Bionca Personal Use Only', sans-serif !important;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+}
+
+/*typography for mobiles with max-width of 768px*/
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.938rem;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  h2 {
+    font-size: 3.375rem !important;
+  }
+}
+
+/*typography for tablets with min width of 768px*/
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 5rem !important;
+  }
+
+  h2 {
+    font-size: 3.125rem !important;
+  }
+}
+
+/*typography for desktop with min width of 1280px*/
+@media screen and (min-width: 1280px) {
+  p {
+    font-size: 1.031rem;
+  }
+
+  h1 {
+    font-size: 6rem !important;
+  }
+
+  h2 {
+    font-size: 4rem !important;
+  }
+}
+
+.default-page {
+  @apply min-h-screen flex flex-col;
+}
