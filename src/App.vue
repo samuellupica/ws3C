@@ -11,9 +11,8 @@ import router from '@/router'
 import Header from '@/components/header/TheHeader.vue'
 import Footer from '@/components/footer/TheFooter.vue'
 import Container from '@/components/TheContainer.vue'
-import {onMounted} from "vue";
 
-onMounted(() => {
+window.addEventListener('DOMContentLoaded', () => {
   const body = document.querySelector('body');
   body.classList.add('fade-in-body');
   body.classList.remove('invisible');
