@@ -2,6 +2,10 @@
     animation: fadeIn 2s, scaleIn 1s;
 }
 
+.fade-in-body {
+    animation: fadeIn 1.5s
+}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -30,7 +34,7 @@
 
 /*3D hover animation*/
 .three-dimensional-card {
-    background: url("public/images/dog-violet.png") no-repeat;
+    background: url("public/images/dog-violet.jpg") no-repeat;
     background-size: cover;
     max-width: 500px;
     height: 300px;
