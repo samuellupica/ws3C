@@ -13,9 +13,6 @@ module.exports = {
         'lavender-blue' :   "#8C8AE6",
         'yellowish-green':  "#CCFF8C",
       },
-      backgroundImage: {
-        'home': "url('/images/dog-violet.png)",
-      }
     },
   },
   variants: {
