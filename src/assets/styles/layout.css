@@ -1,5 +1,5 @@
 .inlay {
-  @apply max-md:px-7 max-md:py-10 md:py-5 md:px-24 lg:py-24 lg:pl-40 lg:pr-40;
+  @apply max-md:px-7 max-md:py-10 md:py-5 md:px-24 lg:py-20 lg:pl-40 lg:pr-40;
 }
 
 .mobile-navigation {
@@ -9,11 +9,11 @@
 .desktop-navigation-sidebar {
   writing-mode: vertical-rl;
   rotate: 180deg;
-  @apply sticky top-24 flex justify-between gap-8 h-full max-h-[500px];
+  @apply sticky top-[20%] flex justify-between h-full max-h-[350px];
 }
 
 .desktop-navigation {
-  @apply max-lg:hidden pr-5 pl-5 top-0 gap-1 border-r border-yellowish-green;
+  @apply max-lg:hidden pb-[5vh] px-5 top-0 border-r border-yellowish-green;
 }
 
 .home-content {
