@@ -1,5 +1,5 @@
 <template>
-  <div class="home-content" :style="{ height: contentHeight }">
+  <div class="home-content h-full grow py-[6vh]">
     <div class="flex flex-col">
       <h1 class="w-max" id="tierisch-heading-1">Tierisch</h1>
       <p :style="{ maxWidth: textWidth }">
@@ -14,27 +14,16 @@
 </template>
 <script setup lang="js">
 import { onMounted, ref } from 'vue'
-
-const contentHeight = ref('auto')
 const textWidth = ref('auto')
 
 const updateWidth = () => {
   textWidth.value = document.getElementById('tierisch-heading-1').offsetWidth + 'px'
 }
 
-const updateHeight = () => {
-  const footerHeight = document.querySelector('footer').offsetHeight
-  const headerHeight = document.querySelector('header').offsetHeight
-  const clientHeight = document.documentElement.clientHeight
-  contentHeight.value = clientHeight - footerHeight - headerHeight + 'px'
-}
-
 onMounted(() => {
-  updateHeight()
   updateWidth()
   window.addEventListener('resize', () => {
     updateWidth()
-    updateHeight()
   })
 })
 </script>
