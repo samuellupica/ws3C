@@ -7,14 +7,6 @@
       sondern auch ein Statement sind. Erfahren Sie mehr über unsere Mission, unser Engagement und die Menschen, die hinter TierischAnders stehen. Zusammen schaffen wir eine Welt, in der Tiere ihren
       ganz eigenen, besonderen Platz haben.
     </p>
-<!--    <v-img src="/images/dog-violet.png" class="three-dimensional-card"></v-img>-->
   </div>
 </template>
-<script setup lang="js">
-import threeDimensionalHover from "@/components/image/threeDimensionalCard";
-import {onMounted} from "vue";
-onMounted(() => {
-  threeDimensionalHover();
-})
-
-</script>
+<script setup lang="js"></script>

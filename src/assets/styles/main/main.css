@@ -1,71 +1,71 @@
 @import '../variables.css';
 
 @layer base {
-    body {
-        color: var(--text-color);
+  body {
+    color: var(--text-color);
+  }
+
+  p,
+  h2 {
+    font-family: Inter, sans-serif;
+  }
+
+  h1,
+  h3 {
+    font-family: 'Bionca Personal Use Only', sans-serif;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  /*typography for mobiles with max-width of 768px*/
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: 0.938rem;
     }
 
-    p,
+    h1 {
+      font-size: 4rem;
+    }
+
     h2 {
-        font-family: Inter, sans-serif;
+      font-size: 3.125rem;
+    }
+  }
+
+  /*typography for tablets with min width of 768px*/
+  @media screen and (min-width: 768px) {
+    p {
+      font-size: 1rem;
     }
 
-    h1,
-    h3 {
-        font-family: 'Bionca Personal Use Only', sans-serif;
-        text-transform: uppercase;
+    h1 {
+      font-size: 5rem;
     }
 
-    h3 {
-        font-size: 1.5rem;
+    h2 {
+      font-size: 3.375rem;
+    }
+  }
+
+  /*typography for desktop with min width of 1280px*/
+  @media screen and (min-width: 1280px) {
+    p {
+      font-size: 1.031rem;
     }
 
-    /*typography for mobiles with max-width of 768px*/
-    @media screen and (max-width: 768px) {
-        p {
-            font-size: 0.938rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-        }
-
-        h2 {
-            font-size: 3.125rem;
-        }
+    h1 {
+      font-size: 6rem;
     }
 
-    /*typography for tablets with min width of 768px*/
-    @media screen and (min-width: 768px) {
-        p {
-            font-size: 1rem;
-        }
-
-        h1 {
-            font-size: 5rem;
-        }
-
-        h2 {
-            font-size: 3.375rem;
-        }
+    h2 {
+      font-size: 4rem;
     }
+  }
 
-    /*typography for desktop with min width of 1280px*/
-    @media screen and (min-width: 1280px) {
-        p {
-            font-size: 1.031rem;
-        }
-
-        h1 {
-            font-size: 6rem;
-        }
-
-        h2 {
-            font-size: 4rem;
-        }
-    }
-
-    .default-page {
-        @apply min-h-screen flex flex-col;
-    }
+  .default-page {
+    @apply min-h-screen flex flex-col;
+  }
 }
