@@ -10,14 +10,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta: {
+        isNavItem: false
+      }
     },
     {
       path: '/shop',
       name: 'shop',
       component: ShopView,
       meta: {
-        color: '#8C8AE6'
+        color: '#8C8AE6',
+        isNavItem: true
       }
     },
     {
@@ -25,7 +29,8 @@ const router = createRouter({
       name: 'contact',
       component: ContactView,
       meta: {
-        color: '#2D0077'
+        color: '#2D0077',
+        isNavItem: true
       }
     },
     {
@@ -33,7 +38,8 @@ const router = createRouter({
       name: 'about us',
       component: AboutUsView,
       meta: {
-        color: '#927DC9'
+        color: '#927DC9',
+        isNavItem: true
       }
     }
   ]

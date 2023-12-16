@@ -13,7 +13,7 @@ import router from '@/router'
 const items = ref([])
 
 router.options.routes.forEach((route) => {
-  if (route.name !== 'home') {
+  if (route.meta.isNavItem) {
     items.value.push({
       name: route.name,
       path: route.path

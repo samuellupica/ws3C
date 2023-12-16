@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Hundehalsband",
+      "imageTitle": "hundehalsband",
+      "price": 20,
+      "description": "Das ist ein tolles Hundehalsband",
+      "inStock": true,
+      "size": "S"
+    },
+    {
+      "id": 2,
+      "title": "Hundeweste",
+      "imageTitle": "weste-gelb",
+      "price": 50,
+      "description": "Das ist eine überaus wunderschöne Hundeweste",
+      "inStock": true,
+      "size": "XL"
+    },
+    {
+      "id": 3,
+      "title": "Rollstuhl RPX-20h",
+      "imageTitle": "rollstuhl-rpx",
+      "price": 250,
+      "description": "Wow ist das ein toller Rollstuhl!",
+      "inStock": false,
+      "size": "M"
+    },
+    {
+      "id": 4,
+      "title": "HUNTER - Hundeleine",
+      "imageTitle": "hunter-hundeleine",
+      "price": 74,
+      "description": "Robuste Führleine für den Alltagsgebrauch, geeignet für kleine und mittelgrosse Hunde",
+      "inStock": true,
+      "size": "uni"
+    },
+    {
+      "id": 5,
+      "title": "Gelbe Skimaske",
+      "imageTitle": "gelbe-skimaske",
+      "price": 18,
+      "description": "Damit ihr Hund optimal geschützt ist",
+      "inStock": true,
+      "size": "S"
+    },
+    {
+      "id": 6,
+      "title": "Gummiball",
+      "imageTitle": "gummiball",
+      "price": 12,
+      "description": "Ein roter Gummiball, für Hundin und Herrchen geeignet",
+      "inStock": false,
+      "size": "uni"
+    }
+  ]
+}
