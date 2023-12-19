@@ -13,7 +13,7 @@
   </div>
 </template>
 <script setup lang="js">
-import { onMounted, ref } from 'vue'
+import { onBeforeMount, onMounted, ref } from 'vue'
 const textWidth = ref('auto')
 
 const updateWidth = () => {
@@ -25,5 +25,9 @@ onMounted(() => {
   window.addEventListener('resize', () => {
     updateWidth()
   })
+})
+
+onBeforeMount(() => {
+  document.body.className = 'home'
 })
 </script>

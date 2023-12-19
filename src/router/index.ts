@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import ShopView from '../views/ShopView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutUsView from '@/views/AboutUsView.vue'
+import AgbView from '@/views/AgbView.vue'
+import ImpressumView from '@/views/ImpressumView.vue'
+import DatenschutzView from '@/views/DatenschutzView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,7 +23,6 @@ const router = createRouter({
       name: 'shop',
       component: ShopView,
       meta: {
-        color: '#8C8AE6',
         isNavItem: true
       }
     },
@@ -29,7 +31,6 @@ const router = createRouter({
       name: 'contact',
       component: ContactView,
       meta: {
-        color: '#2D0077',
         isNavItem: true
       }
     },
@@ -38,8 +39,31 @@ const router = createRouter({
       name: 'about us',
       component: AboutUsView,
       meta: {
-        color: '#927DC9',
         isNavItem: true
+      }
+    },
+    {
+      path: '/agb',
+      name: 'AGB',
+      component: AgbView,
+      meta: {
+        isNavItem: false
+      }
+    },
+    {
+      path: '/impressum',
+      name: 'Impressum',
+      component: ImpressumView,
+      meta: {
+        isNavItem: false
+      }
+    },
+    {
+      path: '/datenschutz',
+      name: 'Datenschutz',
+      component: DatenschutzView,
+      meta: {
+        isNavItem: false
       }
     }
   ]

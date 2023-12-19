@@ -12,7 +12,7 @@
           <span>{{ product.title }}</span>
           <span>{{ product.price }} CHF</span>
         </div>
-        <div class="overlay">
+        <div v-if="productsLoaded" class="overlay">
           <div class="text-h4">{{ product.title }}</div>
           <p class="m-4 text-center">{{ product.description }}</p>
           <v-icon v-if="product.inStock" icon="mdi-cart" class="cursor-pointer" />
@@ -24,14 +24,28 @@
 </template>
 <script setup lang="ts">
 import productData from '../assets/db/db.json'
-import { computed } from 'vue'
+import { computed, onBeforeMount, onMounted, ref } from 'vue'
 
 const products = computed(() => productData.products)
+const productsLoaded = ref(false)
+onMounted(() => {
+  setTimeout(() => {
+    productsLoaded.value = true
+  }, 1000)
+})
+
+onBeforeMount(() => {
+  document.body.className = 'shop'
+})
 </script>
-<style>
+<style scoped>
+body {
+  @apply bg-bluish-purple;
+}
+
 .overlay {
   @apply left-0 bottom-full h-0 w-full overflow-hidden absolute backdrop-blur-lg brightness-90 flex flex-col justify-center items-center;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .tile {

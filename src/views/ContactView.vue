@@ -8,11 +8,11 @@
     <FormContact first-name-label="Vorname" last-name-label="Nachname" email-label="E-Mail"></FormContact>
   </div>
 </template>
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="js">
+import { onBeforeMount } from 'vue'
 import FormContact from '@/components/form/FormContact.vue'
 
-export default defineComponent({
-  components: { FormContact }
+onBeforeMount(() => {
+  document.body.className = 'contact'
 })
 </script>
