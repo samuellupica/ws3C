@@ -2,56 +2,74 @@
   "products": [
     {
       "id": 1,
-      "title": "Hundehalsband",
-      "imageTitle": "hundehalsband",
+      "title": "Komfort-Collar",
+      "imageTitle": "komfort-collar",
       "price": 20,
-      "description": "Das ist ein tolles Hundehalsband",
+      "description": "Stilvolles, strapazierfähiges Hundehalsband für Komfort und Sicherheit.",
       "inStock": true,
       "size": "S"
     },
     {
       "id": 2,
-      "title": "Hundeweste",
-      "imageTitle": "weste-gelb",
+      "title": "Vital-Feed-MD",
+      "imageTitle": "vital-feed-md",
       "price": 50,
-      "description": "Das ist eine überaus wunderschöne Hundeweste",
+      "description": "Hochwertiges, ausgewogenes Hundefutter für eine gesunde Ernährung.",
       "inStock": true,
-      "size": "XL"
+      "size": "MD"
     },
     {
       "id": 3,
-      "title": "Rollstuhl RPX-20h",
-      "imageTitle": "rollstuhl-rpx",
+      "title": "Aqua-Guard",
+      "imageTitle": "aqua-guard",
       "price": 250,
-      "description": "Wow ist das ein toller Rollstuhl!",
+      "description": "Schwimmfähige Hundeweste für sicheren Wasserspaß und Notfallschutz.",
       "inStock": false,
       "size": "M"
     },
     {
       "id": 4,
-      "title": "HUNTER - Hundeleine",
-      "imageTitle": "hunter-hundeleine",
+      "title": "Roll-Assist",
+      "imageTitle": "roll-assist",
       "price": 74,
-      "description": "Robuste Führleine für den Alltagsgebrauch, geeignet für kleine und mittelgrosse Hunde",
+      "description": "Mobilitätsunterstützung für Hunde mit einem anpassbaren Rollstuhl.",
       "inStock": true,
       "size": "uni"
     },
     {
       "id": 5,
-      "title": "Gelbe Skimaske",
-      "imageTitle": "gelbe-skimaske",
+      "title": "Safe-Vest",
+      "imageTitle": "safe-vest",
       "price": 18,
-      "description": "Damit ihr Hund optimal geschützt ist",
+      "description": "Reflektierende Hundeweste für Sichtbarkeit und Schutz bei Outdoor-Aktivitäten.",
       "inStock": true,
       "size": "S"
     },
     {
       "id": 6,
-      "title": "Gummiball",
-      "imageTitle": "gummiball",
+      "title": "Secure-Lead",
+      "imageTitle": "secure-lead",
       "price": 12,
-      "description": "Ein roter Gummiball, für Hundin und Herrchen geeignet",
+      "description": "Robuste Hundeleine für sicheres und angenehmes Gassigehen.",
       "inStock": false,
+      "size": "uni"
+    },
+    {
+      "id": 7,
+      "title": "Secure-Lead-Leather",
+      "imageTitle": "secure-lead-leather",
+      "price": 20,
+      "description": "Robuste Hundeleine für sicheres und angenehmes Gassigehen.Leder",
+      "inStock": true,
+      "size": "uni"
+    },
+    {
+      "id": 8,
+      "title": "Vital-Feed-XR",
+      "imageTitle": "vital-feed-xr",
+      "price": 45,
+      "description": "Hochwertiges, ausgewogenes Hundefutter für eine gesunde Ernährung.",
+      "inStock": true,
       "size": "uni"
     }
   ]
