@@ -1,9 +1,21 @@
 @import '../variables.css';
+@import '../animations.css';
 
 @layer base {
   body {
     color: var(--text-color);
     background-color: #5a44bf;
+  }
+
+  .bg-home {
+    @apply bg-cover absolute bottom-0 top-0 left-0 w-screen h-screen;
+    background-position: 25% 75%;
+    background-image: url('../../images/dog-violet.jpg');
+
+    @supports (background-image: url('../../images/dog-violet.webp')) {
+      background-image: url('../../images/dog-violet.webp');
+    }
+    animation: fadeIn 2s;
   }
 
   body.shop {
