@@ -1,5 +1,5 @@
 <template>
-  <div :class="router.currentRoute.value.path === '/' ? 'bg-home default-page' : 'default-page'" :style="`background-color: ${$route.meta.color}`">
+  <div :class="router.currentRoute.value.path === '/' ? 'bg-home default-page' : 'default-page'">
     <Header />
     <Container />
     <Footer />
@@ -12,9 +12,8 @@ import Footer from '@/components/footer/TheFooter.vue'
 import Container from '@/components/TheContainer.vue'
 
 window.addEventListener('DOMContentLoaded', () => {
-  const body = document.querySelector('body')
-  body.classList.add('fade-in-body')
-  body.classList.remove('invisible')
+  document.body.classList.add('fade-in-body')
+  document.body.classList.remove('invisible')
 })
 </script>
 <style>

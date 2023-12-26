@@ -3,6 +3,19 @@
 @layer base {
   body {
     color: var(--text-color);
+    background-color: #5a44bf;
+  }
+
+  body.shop {
+    background-color: #8c8ae6;
+  }
+
+  body.about {
+    background-color: #927dc9;
+  }
+
+  body.contact {
+    background-color: #2d0077;
   }
 
   p,

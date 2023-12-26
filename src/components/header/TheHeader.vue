@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="sticky absolute top-0" :style="`background-color: ${$route.meta.color}`">
+    <div class="sticky absolute top-0">
       <div class="header-logo">
         <h3 @click="router.push('/')" class="scale-up cursor-pointer">Tierisch anders</h3>
       </div>

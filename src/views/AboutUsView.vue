@@ -9,4 +9,10 @@
     </p>
   </div>
 </template>
-<script setup lang="js"></script>
+<script setup lang="js">
+import { onBeforeMount } from 'vue'
+
+onBeforeMount(() => {
+  document.body.className = 'about'
+})
+</script>
