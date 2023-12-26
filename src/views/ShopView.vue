@@ -7,13 +7,14 @@
     </p>
     <div class="grid md:grid-cols-12 gap-2.5">
       <div v-for="(product, index) in products" :key="product.id" :class="`tile product-tile-${(index % 4) + 1}`">
-        <img loading="lazy" :src="'/images/products/' + product.imageTitle + '.png'" alt="" class="max-h-[400px] h-full object-cover max-md:aspect-square" />
+        <img loading="lazy" :src="'/images/products/' + product.imageTitle + '.png'" :alt="product.title" class="max-h-[400px] h-full object-cover max-md:aspect-square" />
         <div class="flex justify-between max-lg:flex-col p-8 items-center">
           <span>{{ product.title }}</span>
           <span>{{ product.price }} CHF</span>
         </div>
-        <div v-if="productsLoaded" class="overlay">
-          <div class="text-h4">{{ product.title }}</div>
+        <div v-if="productsLoaded" class="overlay" />
+        <div v-if="productsLoaded" class="product-details">
+          <div class="text-h4 mx-4">{{ product.title }}</div>
           <p class="m-4 text-center">{{ product.description }}</p>
           <v-icon v-if="product.inStock" icon="mdi-cart" class="cursor-pointer" />
           <span class="font-bold" v-else>Out of Stock</span>
@@ -44,8 +45,17 @@ body {
 }
 
 .overlay {
-  @apply left-0 bottom-full h-0 w-full overflow-hidden absolute backdrop-blur-lg brightness-90 flex flex-col justify-center items-center;
+  @apply left-0 bottom-full h-0 w-full overflow-hidden bg-indigo-950 absolute opacity-80 flex flex-col justify-center items-center;
   transition: all 0.3s ease-in-out;
+}
+
+.product-details {
+  @apply flex flex-col items-center h-fit m-auto absolute opacity-0 top-0 left-0 bottom-0 right-0;
+}
+
+.tile:hover .product-details {
+  @apply opacity-100;
+  transition: all 0.6s;
 }
 
 .tile {
