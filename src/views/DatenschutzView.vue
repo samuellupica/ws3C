@@ -9,7 +9,7 @@
     </p>
     <br />
     <h3>Arten der verarbeiteten Daten</h3>
-    <ol class="list-disc">
+    <ol class="list-disc list-inside">
       <li>Bestanddaten</li>
       <li>Kontaktdaten</li>
       <li>Inhaltsdaten</li>

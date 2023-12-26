@@ -5,7 +5,7 @@
 }
 
 .fade-in-body {
-  animation: fadeIn 1.5s;
+  animation: fadeIn 3.5s;
 }
 
 @keyframes fadeIn {
