@@ -9,11 +9,11 @@
 .desktop-navigation-sidebar {
   writing-mode: vertical-rl;
   rotate: 180deg;
-  @apply sticky py-20 top-0 flex justify-between h-full max-h-[500px];
+  @apply sticky py-20 mx-5 top-0 flex justify-between h-full max-h-[500px];
 }
 
 .desktop-navigation {
-  @apply max-lg:hidden px-5 top-0 border-r border-yellowish-green;
+  @apply max-lg:hidden w-fit top-0 border-r border-yellowish-green;
 }
 
 .home-content {
