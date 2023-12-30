@@ -8,7 +8,7 @@
     <div class="grid md:grid-cols-12 gap-2.5">
       <div v-for="(product, index) in products" :key="product.id" :class="`tile product-tile-${(index % 4) + 1}`">
         <img loading="lazy" :src="'/images/products/' + product.imageTitle + '.png'" :alt="product.title" class="max-h-[400px] h-full object-cover max-md:aspect-square" />
-        <div class="flex justify-between max-lg:flex-col p-8 items-center">
+        <div class="flex justify-between max-lg:flex-col p-4 items-center grow">
           <span>{{ product.title }}</span>
           <span>{{ product.price }} CHF</span>
         </div>
@@ -67,7 +67,7 @@ body {
 }
 
 .product-tile-1 {
-  @apply md:col-span-8 md:aspect-[2/1];
+  @apply md:col-span-8 h-full md:aspect-[2/1];
 }
 
 .product-tile-2 {
@@ -79,6 +79,6 @@ body {
 }
 
 .product-tile-4 {
-  @apply md:col-span-7 md:aspect-[7/5];
+  @apply md:col-span-7 h-full md:aspect-[7/5];
 }
 </style>
