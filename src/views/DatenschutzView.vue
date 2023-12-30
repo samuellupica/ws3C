@@ -32,3 +32,8 @@ onBeforeMount(() => {
   document.body.className = 'datenschutz'
 })
 </script>
+<style scoped>
+h3 {
+  font-family: Inter, sans-serif;
+}
+</style>
