@@ -4,7 +4,6 @@ import ShopView from '../views/ShopView.vue'
 import ContactView from '../views/ContactView.vue'
 import AboutUsView from '@/views/AboutUsView.vue'
 import AgbView from '@/views/AgbView.vue'
-import ImpressumView from '@/views/ImpressumView.vue'
 import DatenschutzView from '@/views/DatenschutzView.vue'
 
 const router = createRouter({
@@ -46,14 +45,6 @@ const router = createRouter({
       path: '/agb',
       name: 'AGB',
       component: AgbView,
-      meta: {
-        isNavItem: false
-      }
-    },
-    {
-      path: '/impressum',
-      name: 'Impressum',
-      component: ImpressumView,
       meta: {
         isNavItem: false
       }
