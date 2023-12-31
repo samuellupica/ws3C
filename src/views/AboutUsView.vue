@@ -26,8 +26,11 @@ onBeforeMount(() => {
   transition: all ease-in-out 0.3s;
 }
 
-.invert:hover {
-  -webkit-filter: invert(0);
-  transform: scale(0.95);
+@media screen and (min-width: 1024px) {
+  .invert:hover {
+    -webkit-filter: invert(0);
+    transform: scale(0.95);
+  }
 }
+
 </style>
