@@ -22,7 +22,7 @@ import router from '@/router'
 const footerItems = ref([])
 
 router.options.routes.forEach((route) => {
-  if (!route.meta.isNavItem && route.path !== '/') {
+  if (!route.meta.isNavItem && route.path !== '/' && route.path !== '/:notFound') {
     footerItems.value.push({
       name: route.name,
       path: route.path
