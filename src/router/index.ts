@@ -5,6 +5,7 @@ import ContactView from '../views/ContactView.vue'
 import AboutUsView from '@/views/AboutUsView.vue'
 import AgbView from '@/views/AgbView.vue'
 import DatenschutzView from '@/views/DatenschutzView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,6 +14,13 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
+      meta: {
+        isNavItem: false
+      }
+    },
+    {
+      path: '/:notFound',
+      component: NotFoundView,
       meta: {
         isNavItem: false
       }
