@@ -14,13 +14,13 @@
   .bg-home {
     @apply bg-cover absolute bottom-0 top-0 left-0;
     background-position: 25% 75%;
-    background-image: url('../../images/dog-violet.jpg');
+    background-image: url('/images/dog-violet.jpg');
     animation: fadeIn 2s;
   }
 
-  @supports (background-image: url('../../images/dog-violet.webp')) {
+  @supports (background-image: url('/images/dog-violet.webp')) {
     .bg-home {
-      background-image: url('../../images/dog-violet.webp');
+      background-image: url('/images/dog-violet.webp');
       animation: fadeIn 2s;
     }
   }
