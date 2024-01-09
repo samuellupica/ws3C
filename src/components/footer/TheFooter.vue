@@ -19,10 +19,12 @@
 import { ref } from 'vue'
 import router from '@/router'
 
-const footerItems = ref([])
+const itemsArr: any[] = [];
+const footerItems = ref(itemsArr)
 
+console.log(footerItems)
 router.options.routes.forEach((route) => {
-  if (!route.meta.isNavItem && route.path !== '/' && route.path !== '/:notFound') {
+  if (!route.meta?.isNavItem && route.path !== '/' && route.path !== '/:notFound') {
     footerItems.value.push({
       name: route.name,
       path: route.path

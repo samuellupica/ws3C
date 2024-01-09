@@ -9,8 +9,8 @@ import FormTextArea from '@/components/form/FormTextArea.vue'
 import VButton from '@/components/button/VButton.vue'
 
 const inputProps = defineProps<{
-  firstNameLabel?: String
-  lastNameLabel?: String
-  emailLabel?: String
+  firstNameLabel?: string
+  lastNameLabel?: string
+  emailLabel?: string
 }>()
 </script>

@@ -9,9 +9,10 @@
 import { ref } from 'vue'
 import router from '@/router'
 
-const items = ref([])
+const itemsArr: any[] = []
+const items = ref(itemsArr)
 router.options.routes.forEach((route) => {
-  if (route.name !== 'home' && route.meta.isNavItem) {
+  if (route.name !== 'home' && route.meta?.isNavItem) {
     items.value.push({
       name: route.name,
       path: route.path
